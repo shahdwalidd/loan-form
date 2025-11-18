@@ -97,3 +97,127 @@ button:hover {
     text-align: center;
    
 }
+/* تنسيق الـ select */
+select {
+    width: 100%;
+    /* ياخد كل مساحة الفورم */
+    padding: 12px;
+    /* مسافة داخلية */
+    border-radius: 10px;
+    /* حواف دائرية */
+    border: 1px solid #ccc;
+    /* إطار خفيف */
+    font-size: 16px;
+    /* حجم الخط */
+    background-color: #fff;
+    /* خلفية بيضاء */
+    color: #333;
+    /* لون النص */
+    outline: none;
+    /* إزالة الإطار عند التركيز */
+    transition: 0.3s;
+    /* حركة ناعمة عند hover */
+    cursor: pointer;
+    /* مؤشر اليد عند المرور */
+    margin-bottom: 15px;
+    /* مسافة تحت العنصر */
+}
+
+/* تأثير عند التركيز */
+select:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+/* تنسيق الـ option */
+option {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+/* خلفية سوداء شفافة تغطي الشاشة */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* صندوق المودال */
+.modal-box {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    animation: popUp 0.3s ease;
+}
+
+/* عنوان المودال */
+.modal-box h2 {
+    font-size: 20px;
+    color: #35834d;
+    margin-bottom: 25px;
+}
+
+/* الزر */
+.close-btn {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* أنيميشن الظهور */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* أنيميشن البووب */
+@keyframes popUp {
+    from {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+button:disabled {
+    background: #bfbfbf;
+    /* لون رمادي باين */
+    color: #777;
+    /* لون نص باهت */
+    cursor: not-allowed;
+    /* شكل الماوس X */
+    opacity: 0.7;
+    /* باهت شوية */
+    transform: none;
+    /* مفيش Hover */
+    box-shadow: none;
+    /* مفيش ظل */
+}
