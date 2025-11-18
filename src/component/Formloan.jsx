@@ -18,8 +18,6 @@ salary:""
           loaninput.salary.trim()!="" &&
           loaninput.isemployee === true;
 
-
-
 return( 
     <div className="form-wrapper">
       <h2 className="form-title">Loan Application</h2>

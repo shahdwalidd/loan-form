@@ -1,4 +1,4 @@
-/* ==== الصفحة بالكامل ==== */
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-/* ==== كارد الفورم ==== */
+
 form {
     width: 380px;
     padding: 30px;
@@ -23,7 +23,7 @@ form {
     animation: fadeIn 0.7s ease;
 }
 
-/* ==== الانيميشن ==== */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -36,7 +36,7 @@ form {
     }
 }
 
-/* ==== العناصر ==== */
+
 label {
     font-size: 15px;
     font-weight: 600;
@@ -63,7 +63,7 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
-/* ==== زرار الجامد ==== */
+
 button {
     padding: 14px;
     background: #6a11cb;
@@ -97,45 +97,35 @@ button:hover {
     text-align: center;
    
 }
-/* تنسيق الـ select */
+
 select {
     width: 100%;
-    /* ياخد كل مساحة الفورم */
     padding: 12px;
-    /* مسافة داخلية */
     border-radius: 10px;
-    /* حواف دائرية */
     border: 1px solid #ccc;
-    /* إطار خفيف */
     font-size: 16px;
-    /* حجم الخط */
     background-color: #fff;
-    /* خلفية بيضاء */
     color: #333;
-    /* لون النص */
     outline: none;
-    /* إزالة الإطار عند التركيز */
     transition: 0.3s;
-    /* حركة ناعمة عند hover */
     cursor: pointer;
-    /* مؤشر اليد عند المرور */
     margin-bottom: 15px;
-    /* مسافة تحت العنصر */
+
 }
 
-/* تأثير عند التركيز */
+
 select:focus {
     border-color: #6a11cb;
     box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
 }
 
-/* تنسيق الـ option */
+
 option {
     padding: 10px;
     font-size: 16px;
     color: #333;
 }
-/* خلفية سوداء شفافة تغطي الشاشة */
+
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -150,7 +140,6 @@ option {
     animation: fadeIn 0.3s ease-in-out;
 }
 
-/* صندوق المودال */
 .modal-box {
     background: white;
     padding: 30px 40px;
@@ -161,14 +150,14 @@ option {
     animation: popUp 0.3s ease;
 }
 
-/* عنوان المودال */
+
 .modal-box h2 {
     font-size: 20px;
     color: #35834d;
     margin-bottom: 25px;
 }
 
-/* الزر */
+
 .close-btn {
     margin-top: 10px;
     padding: 12px 20px;
@@ -186,7 +175,6 @@ option {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* أنيميشن الظهور */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -197,7 +185,6 @@ option {
     }
 }
 
-/* أنيميشن البووب */
 @keyframes popUp {
     from {
         transform: scale(0.7);
@@ -209,15 +196,9 @@ option {
 }
 button:disabled {
     background: #bfbfbf;
-    /* لون رمادي باين */
     color: #777;
-    /* لون نص باهت */
     cursor: not-allowed;
-    /* شكل الماوس X */
     opacity: 0.7;
-    /* باهت شوية */
     transform: none;
-    /* مفيش Hover */
     box-shadow: none;
-    /* مفيش ظل */
 }
